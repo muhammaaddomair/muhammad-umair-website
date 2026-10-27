@@ -1,5 +1,7 @@
 "use client";
 
+import ToastProvider from "@/components/toasts/toast-provider";
+
 import { useMemo, useState, type ReactNode } from "react";
 
 import ContactModal from "@/components/modals/contact-modal";
@@ -24,6 +26,7 @@ export default function GlobalContextProvider({
     <GlobalContext.Provider value={value}>
       {children}
       <ContactModal />
+      <ToastProvider />
     </GlobalContext.Provider>
   );
 }

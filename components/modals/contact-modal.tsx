@@ -1,10 +1,12 @@
 "use client";
 
-import { useState, type SubmitEvent } from "react";
+import { useRef, useState, type SubmitEvent } from "react";
 
 import { useGlobalContext } from "@/contexts/global-context";
 
 import { modalSocialLinks } from "@/data/components.modal-data";
+
+import { resumeToast } from "@/components/toasts/resume-toast";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -29,6 +31,10 @@ export default function ContactModal() {
   const [step, setStep] = useState<"options" | "resume">("options");
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
+  const [sending, setSending] = useState(false);
+  const [resumeRequested, setResumeRequested] = useState(false);
+  const requestInFlight = useRef(false);
+  const formSession = useRef(0);
   const emailLink = modalSocialLinks.find(
     (link) => link.label === "Email",
   )?.href;
@@ -38,17 +44,49 @@ export default function ContactModal() {
   const optionClass =
     "group flex w-full items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-4 text-left transition-colors hover:border-primary/40 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary sm:p-5";
 
-  function requestResume(event: SubmitEvent<HTMLFormElement>) {
+  async function requestResume(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
-    setError(
-      "Resume delivery isn't available yet. Please email me directly and I'll help you get a copy.",
-    );
+    if (requestInFlight.current || resumeRequested) return;
+    const form = event.currentTarget;
+    if (!form.reportValidity()) return;
+    const session = formSession.current;
+    requestInFlight.current = true;
+    setSending(true);
+    setError("");
+    resumeToast.loading();
+    try {
+      const response = await fetch("/api/resume", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim(), website: new FormData(form).get("website") || "" }),
+        signal: AbortSignal.timeout(60000),
+      });
+      const data = await response.json().catch(() => null) as { message?: string } | null;
+      if (!response.ok) throw new Error(data?.message || "The resume could not be sent. Please try again later.");
+      setResumeRequested(true);
+      resumeToast.success(data?.message || "Your resume is on its way. Check your inbox and spam folder.");
+      if (formSession.current === session) { setEmail(""); setStep("options"); }
+    } catch (error) {
+      const message = error instanceof DOMException && error.name === "TimeoutError"
+        ? "Delivery is taking longer than expected. Check your inbox before requesting again."
+        : error instanceof TypeError
+          ? "Could not connect. Please check your internet connection and try again."
+          : error instanceof Error ? error.message : "The resume could not be sent. Please try again later.";
+      if (formSession.current === session) setError(message);
+      resumeToast.error(message);
+    } finally {
+      requestInFlight.current = false;
+      setSending(false);
+    }
   }
 
   return (
     <Dialog
       open={connectModal}
-      onOpenChange={setConnectModal}
+      onOpenChange={(open) => {
+        if (!open) formSession.current += 1;
+        setConnectModal(open);
+      }}
       onOpenChangeComplete={(open) => {
         if (!open) {
           setStep("options");
@@ -142,7 +180,8 @@ export default function ContactModal() {
             <button
               type="button"
               onClick={() => setStep("resume")}
-              className={optionClass}
+              disabled={sending || resumeRequested}
+              className={`${optionClass} disabled:cursor-not-allowed disabled:opacity-60`}
             >
               <Download
                 aria-hidden="true"
@@ -151,10 +190,10 @@ export default function ContactModal() {
               />
               <span className="flex-1">
                 <span className="block font-heading text-lg font-semibold">
-                  Request my resume
+                  {resumeRequested ? "Resume requested" : "Request my resume"}
                 </span>
                 <span className="mt-1 block text-xs text-white/65 sm:text-sm">
-                  Get a copy sent to your email.
+                  {resumeRequested ? "Check your inbox and spam folder." : "Get a copy sent to your email."}
                 </span>
               </span>
               <ArrowUpRight
@@ -164,7 +203,11 @@ export default function ContactModal() {
             </button>
           </div>
         ) : (
-          <form onSubmit={requestResume} className="mt-7">
+          <form onSubmit={requestResume} className="mt-7" aria-busy={sending}>
+            <div className="hidden" aria-hidden="true">
+              <label htmlFor="resume-website">Website</label>
+              <input id="resume-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+            </div>
             <label
               htmlFor="resume-email"
               className="mb-2 block text-sm font-medium"
@@ -177,6 +220,8 @@ export default function ContactModal() {
               name="email"
               autoComplete="email"
               required
+              disabled={sending || resumeRequested}
+              aria-invalid={Boolean(error)}
               maxLength={254}
               value={email}
               onChange={(event) => {
@@ -189,6 +234,9 @@ export default function ContactModal() {
               }
               className="h-12 w-full rounded-xl border border-white/20 bg-white/5 px-4 text-base text-white outline-none placeholder:text-white/35 focus:border-primary focus:ring-2 focus:ring-primary/20"
             />
+            <p id="resume-note" className="mt-2 text-xs leading-relaxed text-white/65">
+              Your email is used only to send this requested resume. Check your spam folder if needed.
+            </p>
             {error && (
               <p
                 id="resume-error"
@@ -208,9 +256,10 @@ export default function ContactModal() {
             )}
             <Button
               type="submit"
+              disabled={sending || resumeRequested}
               className="mt-5 h-12 w-full rounded-xl bg-primary text-base font-semibold text-primary-foreground hover:bg-primary-hover"
             >
-              Request my resume{" "}
+              {sending ? "Sending resume" : resumeRequested ? "Resume requested" : "Request my resume"}{" "}
               <ArrowUpRight aria-hidden="true" className="size-4" />
             </Button>
           </form>
