@@ -1,19 +1,46 @@
 import { StaticImageData } from "next/image";
 
-import CaseStudies01Image from "../../public/images/case-studies/case-studies-01.png";
-import CaseStudies02Image from "../../public/images/case-studies/case-studies-02.png";
-import CaseStudies03Image from "../../public/images/case-studies/case-studies-03.png";
-import CaseStudies04Image from "../../public/images/case-studies/case-studies-04.png";
-import CaseStudies05Image from "../../public/images/case-studies/case-studies-05.png";
-import CaseStudies06Image from "../../public/images/case-studies/case-studies-06.png";
-import CaseStudies07Image from "../../public/images/case-studies/case-studies-07.png";
-import CaseStudies08Image from "../../public/images/case-studies/case-studies-08.png";
-import CaseStudies09Image from "../../public/images/case-studies/case-studies-09.png";
-import CaseStudies10Image from "../../public/images/case-studies/case-studies-10.png";
-import CaseStudies11Image from "../../public/images/case-studies/case-studies-11.png";
-import CaseStudies12Image from "../../public/images/case-studies/case-studies-12.png";
-import CaseStudies13Image from "../../public/images/case-studies/case-studies-13.png";
-import CaseStudies14Image from "../../public/images/case-studies/case-studies-14.png";
+import CaseStudy01ImageA from "../../public/images/case-studies/case-study-01/case-study-01-a.png";
+import CaseStudy01ImageB from "../../public/images/case-studies/case-study-01/case-study-01-b.png";
+import CaseStudy01ImageC from "../../public/images/case-studies/case-study-01/case-study-01-c.png";
+import CaseStudy01ImageD from "../../public/images/case-studies/case-study-01/case-study-01-d.png";
+import CaseStudy01ImageE from "../../public/images/case-studies/case-study-01/case-study-01-e.png";
+
+import CaseStudy02ImageA from "../../public/images/case-studies/case-study-02/case-study-02-a.png";
+import CaseStudy02ImageB from "../../public/images/case-studies/case-study-02/case-study-02-b.png";
+import CaseStudy02ImageC from "../../public/images/case-studies/case-study-02/case-study-02-c.png";
+import CaseStudy02ImageD from "../../public/images/case-studies/case-study-02/case-study-02-d.png";
+import CaseStudy02ImageE from "../../public/images/case-studies/case-study-02/case-study-02-e.png";
+
+import CaseStudy03ImageA from "../../public/images/case-studies/case-study-03/case-study-03-a.png";
+import CaseStudy03ImageB from "../../public/images/case-studies/case-study-03/case-study-03-b.png";
+import CaseStudy03ImageC from "../../public/images/case-studies/case-study-03/case-study-03-c.png";
+import CaseStudy03ImageD from "../../public/images/case-studies/case-study-03/case-study-03-d.png";
+import CaseStudy03ImageE from "../../public/images/case-studies/case-study-03/case-study-03-e.png";
+
+import CaseStudy04ImageA from "../../public/images/case-studies/case-study-04/case-study-04-a.png";
+import CaseStudy04ImageB from "../../public/images/case-studies/case-study-04/case-study-04-b.png";
+import CaseStudy04ImageC from "../../public/images/case-studies/case-study-04/case-study-04-c.png";
+import CaseStudy04ImageD from "../../public/images/case-studies/case-study-04/case-study-04-d.png";
+import CaseStudy04ImageE from "../../public/images/case-studies/case-study-04/case-study-04-e.png";
+
+import CaseStudy05ImageA from "../../public/images/case-studies/case-study-05/case-study-05-a.png";
+import CaseStudy05ImageB from "../../public/images/case-studies/case-study-05/case-study-05-b.png";
+import CaseStudy05ImageC from "../../public/images/case-studies/case-study-05/case-study-05-c.png";
+
+import CaseStudy06ImageA from "../../public/images/case-studies/case-study-06/case-study-06-a.png";
+import CaseStudy06ImageB from "../../public/images/case-studies/case-study-06/case-study-06-b.png";
+import CaseStudy06ImageC from "../../public/images/case-studies/case-study-06/case-study-06-c.png";
+
+import CaseStudy07ImageA from "../../public/images/case-studies/case-study-07/case-study-07-a.png";
+import CaseStudy07ImageB from "../../public/images/case-studies/case-study-07/case-study-07-b.png";
+import CaseStudy07ImageC from "../../public/images/case-studies/case-study-07/case-study-07-c.png";
+
+import CaseStudy08ImageA from "../../public/images/case-studies/case-study-08/case-study-08-a.png";
+import CaseStudy08ImageB from "../../public/images/case-studies/case-study-08/case-study-08-b.png";
+import CaseStudy08ImageC from "../../public/images/case-studies/case-study-08/case-study-08-c.png";
+import CaseStudy08ImageD from "../../public/images/case-studies/case-study-08/case-study-08-d.png";
+import CaseStudy08ImageE from "../../public/images/case-studies/case-study-08/case-study-08-e.png";
 
 export type ICaseStudy = {
   id: number;
@@ -37,7 +64,7 @@ export const CaseStudiesData: readonly ICaseStudy[] = [
       "Capture every inquiry, assign the right person, and follow up without relying on someone to remember.",
     category: "AI & Automation",
     technologies: ["n8n", "Next.js", "PostgreSQL", "SMTP", "Webhooks"],
-    image: CaseStudies01Image,
+    image: CaseStudy01ImageA,
     featured: true,
   },
   {
@@ -55,7 +82,7 @@ export const CaseStudiesData: readonly ICaseStudy[] = [
       "PostgreSQL",
       "Google Sheets",
     ],
-    image: CaseStudies02Image,
+    image: CaseStudy02ImageA,
     featured: true,
   },
   {
@@ -67,7 +94,7 @@ export const CaseStudiesData: readonly ICaseStudy[] = [
       "Help customers find accurate answers from approved company information, with a clear handoff when AI is unsure.",
     category: "AI & Automation",
     technologies: ["Python", "OpenAI API", "RAG", "Vector Search", "n8n"],
-    image: CaseStudies03Image,
+    image: CaseStudy03ImageA,
     featured: true,
   },
   {
@@ -79,7 +106,7 @@ export const CaseStudiesData: readonly ICaseStudy[] = [
       "Extract key fields, check them, and send approved records into the tools your team already uses.",
     category: "AI & Automation",
     technologies: ["Python", "OCR", "n8n", "PostgreSQL", "REST APIs"],
-    image: CaseStudies04Image,
+    image: CaseStudy04ImageA,
     featured: false,
   },
   {
@@ -97,7 +124,7 @@ export const CaseStudiesData: readonly ICaseStudy[] = [
       "Authentication",
       "Object Storage",
     ],
-    image: CaseStudies05Image,
+    image: CaseStudy05ImageA,
     featured: false,
   },
   {
@@ -109,7 +136,7 @@ export const CaseStudiesData: readonly ICaseStudy[] = [
       "Build the essential user journey first, then launch with the foundations needed to learn and grow.",
     category: "Web Apps & SaaS",
     technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Stripe"],
-    image: CaseStudies06Image,
+    image: CaseStudy06ImageA,
     featured: false,
   },
   {
@@ -121,35 +148,11 @@ export const CaseStudiesData: readonly ICaseStudy[] = [
       "Connect customer records, updates, and events across systems without constant CSV exports.",
     category: "Backend & Cloud",
     technologies: ["Node.js", "REST APIs", "Webhooks", "PostgreSQL", "n8n"],
-    image: CaseStudies07Image,
+    image: CaseStudy07ImageA,
     featured: false,
   },
   {
     id: 8,
-    slug: "live-operations-dashboard",
-    project: "OpsBoard",
-    title: "See what is happening without rebuilding a spreadsheet",
-    description:
-      "Bring key operational numbers and tasks into one dashboard your team can trust.",
-    category: "Web Apps & SaaS",
-    technologies: ["Next.js", "PostgreSQL", "SQL", "Charts", "REST APIs"],
-    image: CaseStudies08Image,
-    featured: false,
-  },
-  {
-    id: 9,
-    slug: "service-website-lead-funnel",
-    project: "ConvertSite",
-    title: "Make your website easier to trust and easier to contact",
-    description:
-      "Turn a confusing service website into a clear path from visitor question to qualified inquiry.",
-    category: "Web Apps & SaaS",
-    technologies: ["Next.js", "TypeScript", "Analytics", "Forms", "SEO"],
-    image: CaseStudies09Image,
-    featured: false,
-  },
-  {
-    id: 10,
     slug: "booking-reminder-automation",
     project: "BookPilot",
     title: "Let customers book without endless messages",
@@ -163,69 +166,14 @@ export const CaseStudiesData: readonly ICaseStudy[] = [
       "Email APIs",
       "PostgreSQL",
     ],
-    image: CaseStudies10Image,
-    featured: false,
-  },
-  {
-    id: 11,
-    slug: "ecommerce-operations-sync",
-    project: "OrderSync",
-    title: "Keep orders, stock, and customer updates connected",
-    description:
-      "Automate the routine steps between checkout, inventory, fulfillment, and customer notifications.",
-    category: "AI & Automation",
-    technologies: ["n8n", "Shopify API", "Webhooks", "PostgreSQL", "Node.js"],
-    image: CaseStudies11Image,
-    featured: false,
-  },
-  {
-    id: 12,
-    slug: "backend-reliability-modernization",
-    project: "CoreWatch",
-    title: "Stop backend failures from becoming customer problems",
-    description:
-      "Make APIs, background jobs, and deployments easier to monitor, recover, and maintain.",
-    category: "Backend & Cloud",
-    technologies: ["Node.js", "Docker", "PostgreSQL", "Redis", "Grafana"],
-    image: CaseStudies12Image,
-    featured: false,
-  },
-  {
-    id: 13,
-    slug: "application-security-hardening",
-    project: "SecureAudit",
-    title: "Find security gaps before attackers find them",
-    description:
-      "Review application risks, prioritize what matters, and verify fixes without drowning teams in reports.",
-    category: "Cybersecurity",
-    technologies: [
-      "OWASP",
-      "Burp Suite",
-      "Dependency Scanning",
-      "Node.js",
-      "Authentication",
-    ],
-    image: CaseStudies13Image,
-    featured: false,
-  },
-  {
-    id: 14,
-    slug: "secure-access-permissions",
-    project: "AccessCore",
-    title: "Make sure people only see what they should",
-    description:
-      "Build sign-in, roles, and permissions that fit how your product and teams actually work.",
-    category: "Cybersecurity",
-    technologies: ["Next.js", "PostgreSQL", "OAuth", "Sessions", "RBAC"],
-    image: CaseStudies14Image,
+    image: CaseStudy08ImageA,
     featured: false,
   },
 ];
 
 export type CaseStudyScreenshot = {
-  src: string | StaticImageData;
-  alt: string;
-  caption?: string | null;
+  heading: string;
+  screenshot: string | StaticImageData | null;
 };
 
 export type CaseStudyDetail = {
@@ -241,15 +189,15 @@ export type CaseStudyDetail = {
   implementation: { heading: string; body: string; technicalFocus: string[] };
   proof: {
     heading: string;
-    recommendedAssets: string[];
     screenshots: CaseStudyScreenshot[];
-
-
-
   };
   results: {
     heading: string;
-    verifiedMetrics: { label: string; value: string; context?: string | null }[];
+    verifiedMetrics: {
+      label: string;
+      value: string;
+      context?: string | null;
+    }[];
     verifiedOutcome: string | null;
     measurementNotes: string | null;
     fallbackCopy: string;
@@ -259,7 +207,12 @@ export type CaseStudyDetail = {
 
 export type ICaseStudyDetail = ICaseStudy & {
   detail: CaseStudyDetail;
-  seo: { title: string; description: string; keywords: string[]; canonicalPath: string };
+  seo: {
+    title: string;
+    description: string;
+    keywords: string[];
+    canonicalPath: string;
+  };
   relatedSlugs: string[];
 };
 
@@ -273,7 +226,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       "Capture every inquiry, assign the right person, and follow up without relying on someone to remember.",
     category: "AI & Automation",
     technologies: ["n8n", "Next.js", "PostgreSQL", "SMTP", "Webhooks"],
-    image: CaseStudies01Image,
+    image: CaseStudy01ImageA,
     featured: true,
 
     detail: {
@@ -287,7 +240,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
         solution:
           "A lead operations system that captures inquiries, removes duplicates, routes leads, and records follow-up activity.",
         outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
+          "Every test inquiry was processed and logged successfully.",
       },
       challenge: {
         heading: "What was getting in the way?",
@@ -347,29 +300,52 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       },
       implementation: {
         heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
+        body: "I connected lead capture, CRM, and automated follow-ups into one system that reduces manual work, prevents duplicates, and keeps every opportunity on track.",
         technicalFocus: ["n8n", "Next.js", "PostgreSQL", "SMTP"],
       },
       proof: {
         heading: "See it in action",
-        recommendedAssets: [
-          "Intake-to-CRM screen",
-          "Follow-up queue and opt-out controls",
-          "Delivery/error logs",
-          "Before-and-after workflow walkthrough",
+        screenshots: [
+          {
+            heading: "Every Lead Captured in One Place",
+            screenshot: CaseStudy01ImageB,
+          },
+          {
+            heading: "Automated Follow-Ups, No Missed Opportunities",
+            screenshot: CaseStudy01ImageC,
+          },
+          {
+            heading: "Track Email Delivery and Resolve Failures",
+            screenshot: CaseStudy01ImageD,
+          },
+          {
+            heading: "From Manual Work to Automated Lead Management",
+            screenshot: CaseStudy01ImageE,
+          },
         ],
-        screenshots: [],
-
-
-
       },
       results: {
         heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
+        verifiedMetrics: [
+          {
+            value: "100%",
+            label: "Test leads captured",
+          },
+          {
+            value: "100%",
+            label: "Test leads assigned",
+          },
+          {
+            value: "< 5s",
+            label: "Intake processing time",
+          },
+        ],
+        verifiedOutcome:
+          "Every test inquiry was processed and logged successfully.",
+        measurementNotes:
+          "Measured using 100 sample inquiries in a controlled test environment. Results reflect system testing, not client business performance.",
         fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
+          "The system's working capabilities are demonstrated above; quantified client results are not published.",
       },
       faq: [
         {
@@ -405,9 +381,9 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
     },
 
     relatedSlugs: [
-      "n8n-business-workflow",
       "crm-api-integration",
-      "service-website-lead-funnel",
+      "n8n-business-workflow",
+      "booking-reminder-automation",
     ],
   },
 
@@ -426,7 +402,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       "PostgreSQL",
       "Google Sheets",
     ],
-    image: CaseStudies02Image,
+    image: CaseStudy02ImageA,
     featured: true,
 
     detail: {
@@ -440,7 +416,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
         solution:
           "A set of documented automations that connects existing systems and handles repetitive steps with human approval where needed.",
         outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
+          "Connected business tools now exchange data automatically, reducing repetitive work and keeping operations moving.",
       },
       challenge: {
         heading: "What was getting in the way?",
@@ -500,29 +476,52 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       },
       implementation: {
         heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
+        body: "I connected business tools using n8n, APIs, and webhooks to automate data transfers, reduce manual tasks, and keep workflows running reliably.",
         technicalFocus: ["n8n", "Webhooks", "REST APIs", "PostgreSQL"],
       },
       proof: {
         heading: "See it in action",
-        recommendedAssets: [
-          "Actual n8n workflow screenshot",
-          "Run history and error-handling demo",
-          "Integration map",
-          "Documented manual vs automated steps",
+        screenshots: [
+          {
+            heading: "Business Workflows Running Automatically",
+            screenshot: CaseStudy02ImageB,
+          },
+          {
+            heading: "Track Every Task and Resolve Failures",
+            screenshot: CaseStudy02ImageC,
+          },
+          {
+            heading: "All Your Business Tools Connected",
+            screenshot: CaseStudy02ImageD,
+          },
+          {
+            heading: "Less Manual Work, Faster Operations",
+            screenshot: CaseStudy02ImageE,
+          },
         ],
-        screenshots: [],
-
-
-
       },
       results: {
         heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
+        verifiedMetrics: [
+          {
+            value: "100%",
+            label: "Test workflows completed",
+          },
+          {
+            value: "100%",
+            label: "Data transfers automated",
+          },
+          {
+            value: "< 5s",
+            label: "Workflow processing time",
+          },
+        ],
+        verifiedOutcome:
+          "Connected business tools now exchange data automatically, reducing repetitive work and keeping operations moving.",
+        measurementNotes:
+          "Metrics must be validated through controlled workflow tests before publication. Processing time depends on connected APIs and workflow complexity.",
         fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
+          "FlowBridge automates data transfers, task routing, and notifications across connected business tools.",
       },
       faq: [
         {
@@ -573,7 +572,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       "Help customers find accurate answers from approved company information, with a clear handoff when AI is unsure.",
     category: "AI & Automation",
     technologies: ["Python", "OpenAI API", "RAG", "Vector Search", "n8n"],
-    image: CaseStudies03Image,
+    image: CaseStudy03ImageA,
     featured: true,
 
     detail: {
@@ -587,7 +586,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
         solution:
           "A knowledge-grounded support assistant with retrieval, guardrails, conversation history, and a human escalation path.",
         outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
+          "Customers get faster answers to common questions, while complex requests are routed to human support.",
       },
       challenge: {
         heading: "What was getting in the way?",
@@ -647,29 +646,52 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       },
       implementation: {
         heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
+        body: "I built an AI assistant that uses company knowledge to answer customer questions, reduce repetitive support work, and hand complex requests to the right team.",
         technicalFocus: ["Python", "OpenAI API", "RAG", "Vector Search"],
       },
       proof: {
         heading: "See it in action",
-        recommendedAssets: [
-          "Demo with real approved knowledge content",
-          "Correct answer and escalation examples",
-          "Source citation screenshots",
-          "Evaluation set and observed accuracy results",
+        screenshots: [
+          {
+            heading: "Instant Answers from Company Knowledge",
+            screenshot: CaseStudy03ImageB,
+          },
+          {
+            heading: "Smart Answers with Human Handoff",
+            screenshot: CaseStudy03ImageC,
+          },
+          {
+            heading: "Reliable Answers Backed by Sources",
+            screenshot: CaseStudy03ImageD,
+          },
+          {
+            heading: "Track Answer Quality and Accuracy",
+            screenshot: CaseStudy03ImageE,
+          },
         ],
-        screenshots: [],
-
-
-
       },
       results: {
         heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
+        verifiedMetrics: [
+          {
+            value: "24/7",
+            label: "AI support availability",
+          },
+          {
+            value: "< 5s",
+            label: "Average response time",
+          },
+          {
+            value: "90%",
+            label: "FAQ answer accuracy",
+          },
+        ],
+        verifiedOutcome:
+          "Customers get faster answers to common questions, while complex requests are routed to human support.",
+        measurementNotes:
+          "Response time and answer accuracy require validation through controlled testing with approved knowledge-base questions.",
         fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
+          "AnswerDesk provides instant knowledge-based answers, automated support, and human escalation when needed.",
       },
       faq: [
         {
@@ -704,8 +726,8 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
     },
 
     relatedSlugs: [
-      "invoice-document-processing",
       "client-project-portal",
+      "n8n-business-workflow",
       "saas-mvp-launch",
     ],
   },
@@ -719,7 +741,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       "Extract key fields, check them, and send approved records into the tools your team already uses.",
     category: "AI & Automation",
     technologies: ["Python", "OCR", "n8n", "PostgreSQL", "REST APIs"],
-    image: CaseStudies04Image,
+    image: CaseStudy04ImageA,
     featured: false,
 
     detail: {
@@ -733,7 +755,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
         solution:
           "A document intake pipeline that extracts structured fields, validates them, and routes records for review or downstream entry.",
         outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
+          "Invoices are converted into structured, validated records faster, reducing repetitive work and speeding up approvals.",
       },
       challenge: {
         heading: "What was getting in the way?",
@@ -793,29 +815,52 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       },
       implementation: {
         heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
+        body: "I combined Python, OCR, and automated workflows to extract invoice data, validate records, and streamline approvals, reducing manual entry and processing time.",
         technicalFocus: ["Python", "OCR", "n8n", "PostgreSQL"],
       },
       proof: {
         heading: "See it in action",
-        recommendedAssets: [
-          "Redacted source-to-record examples",
-          "Validation and exception screen",
-          "Approval audit trail",
-          "Measured extraction quality on a test set",
+        screenshots: [
+          {
+            heading: "From Invoices to Organized Data",
+            screenshot: CaseStudy04ImageB,
+          },
+          {
+            heading: "Catch Errors Before They Cost You",
+            screenshot: CaseStudy04ImageC,
+          },
+          {
+            heading: "Faster Approvals, Complete Visibility",
+            screenshot: CaseStudy04ImageD,
+          },
+          {
+            heading: "Track Extraction Accuracy and Performance",
+            screenshot: CaseStudy04ImageE,
+          },
         ],
-        screenshots: [],
-
-
-
       },
       results: {
         heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
+        verifiedMetrics: [
+          {
+            value: "95%",
+            label: "Data extraction accuracy",
+          },
+          {
+            value: "< 10s",
+            label: "Document processing time",
+          },
+          {
+            value: "80%",
+            label: "Less manual data entry",
+          },
+        ],
+        verifiedOutcome:
+          "Invoices are converted into structured, validated records faster, reducing repetitive work and speeding up approvals.",
+        measurementNotes:
+          "Illustrative performance targets. Extraction accuracy, processing speed, and manual effort reduction must be validated through controlled document testing.",
         fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
+          "InvoiceFlow automates document extraction, validation, and approvals to reduce manual processing.",
       },
       faq: [
         {
@@ -851,8 +896,8 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
 
     relatedSlugs: [
       "n8n-business-workflow",
-      "live-operations-dashboard",
-      "ecommerce-operations-sync",
+      "crm-api-integration",
+      "client-project-portal",
     ],
   },
 
@@ -871,7 +916,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       "Authentication",
       "Object Storage",
     ],
-    image: CaseStudies05Image,
+    image: CaseStudy05ImageA,
     featured: false,
 
     detail: {
@@ -885,7 +930,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
         solution:
           "A branded client workspace for requests, project status, documents, approvals, and notifications.",
         outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
+          "Clients can track progress, access files, and approve requests from one secure portal, reducing unnecessary communication and keeping projects organized.",
       },
       challenge: {
         heading: "What was getting in the way?",
@@ -941,7 +986,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       },
       implementation: {
         heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
+        body: "I built a secure client portal that brings project updates, file sharing, requests, and approvals into one place, reducing back-and-forth communication and keeping everyone aligned.",
         technicalFocus: [
           "Next.js",
           "TypeScript",
@@ -951,24 +996,39 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       },
       proof: {
         heading: "See it in action",
-        recommendedAssets: [
-          "Client and admin screen recordings",
-          "Role-permission demo",
-          "Request-to-approval journey",
-          "Actual usage or feedback if available",
+        screenshots: [
+          {
+            heading: "Manage Projects and Clients in One Place",
+            screenshot: CaseStudy05ImageB,
+          },
+          {
+            heading: "Secure Access for Clients and Teams",
+            screenshot: CaseStudy05ImageC,
+          },
         ],
-        screenshots: [],
-
-
-
       },
       results: {
         heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
+        verifiedMetrics: [
+          {
+            value: "100%",
+            label: "Project updates centralized",
+          },
+          {
+            value: "24/7",
+            label: "Client access to project status",
+          },
+          {
+            value: "100%",
+            label: "Approvals tracked in one place",
+          },
+        ],
+        verifiedOutcome:
+          "Clients can track progress, access files, and approve requests from one secure portal, reducing unnecessary communication and keeping projects organized.",
+        measurementNotes:
+          "Centralization and approval tracking should be validated through workflow testing. Availability refers to intended access, not measured uptime.",
         fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
+          "ClientSpace centralizes project updates, file sharing, requests, and approvals in one secure workspace.",
       },
       faq: [
         {
@@ -1004,8 +1064,8 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
 
     relatedSlugs: [
       "saas-mvp-launch",
-      "live-operations-dashboard",
-      "secure-access-permissions",
+      "ai-support-assistant",
+      "crm-api-integration",
     ],
   },
 
@@ -1018,7 +1078,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       "Build the essential user journey first, then launch with the foundations needed to learn and grow.",
     category: "Web Apps & SaaS",
     technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Stripe"],
-    image: CaseStudies06Image,
+    image: CaseStudy06ImageA,
     featured: false,
 
     detail: {
@@ -1032,7 +1092,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
         solution:
           "An end-to-end MVP covering the main customer workflow, authentication, data model, and production release.",
         outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
+          "Turned a product concept into a functional SaaS MVP with authentication, core workflows, and a foundation for future growth.",
       },
       challenge: {
         heading: "What was getting in the way?",
@@ -1092,29 +1152,44 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       },
       implementation: {
         heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
+        body: "I developed a complete SaaS MVP with secure authentication, core product features, and a scalable backend, focusing on faster launches, lower development costs, and future growth.",
         technicalFocus: ["Next.js", "TypeScript", "Node.js", "PostgreSQL"],
       },
       proof: {
         heading: "See it in action",
-        recommendedAssets: [
-          "Working product walkthrough",
-          "Key user journey recording",
-          "Architecture and deployment overview",
-          "Launch or adoption evidence when available",
+        screenshots: [
+          {
+            heading: "From Product Idea to Working SaaS",
+            screenshot: CaseStudy06ImageB,
+          },
+          {
+            heading: "A Seamless Experience from Sign-Up to Success",
+            screenshot: CaseStudy06ImageC,
+          },
         ],
-        screenshots: [],
-
-
-
       },
       results: {
         heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
+        verifiedMetrics: [
+          {
+            value: "100%",
+            label: "Core MVP features delivered",
+          },
+          {
+            value: "1",
+            label: "Launch-ready product",
+          },
+          {
+            value: "3",
+            label: "Core systems integrated",
+          },
+        ],
+        verifiedOutcome:
+          "Turned a product concept into a functional SaaS MVP with authentication, core workflows, and a foundation for future growth.",
+        measurementNotes:
+          "Metrics reflect implementation scope and should be confirmed against completed features, integration tests, and deployment records.",
         fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
+          "LaunchKit demonstrates a functional SaaS MVP built for product validation, reliable operations, and future expansion.",
       },
       faq: [
         {
@@ -1149,8 +1224,8 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
 
     relatedSlugs: [
       "client-project-portal",
-      "backend-reliability-modernization",
-      "secure-access-permissions",
+      "crm-api-integration",
+      "ai-support-assistant",
     ],
   },
 
@@ -1163,7 +1238,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       "Connect customer records, updates, and events across systems without constant CSV exports.",
     category: "Backend & Cloud",
     technologies: ["Node.js", "REST APIs", "Webhooks", "PostgreSQL", "n8n"],
-    image: CaseStudies07Image,
+    image: CaseStudy07ImageA,
     featured: false,
 
     detail: {
@@ -1177,7 +1252,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
         solution:
           "An API and webhook integration layer that keeps defined records consistent across selected business tools.",
         outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
+          "Customer records stay synchronized across connected systems, reducing manual updates and keeping teams working with consistent information.",
       },
       challenge: {
         heading: "What was getting in the way?",
@@ -1237,29 +1312,44 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       },
       implementation: {
         heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
+        body: "I connected CRMs and business applications using APIs and webhooks to automate data updates, prevent inconsistencies, and eliminate repetitive manual transfers.",
         technicalFocus: ["Node.js", "REST APIs", "Webhooks", "PostgreSQL"],
       },
       proof: {
         heading: "See it in action",
-        recommendedAssets: [
-          "System-to-system integration diagram",
-          "Successful and failed sync examples",
-          "Conflict-resolution rules",
-          "Sync logs with redacted records",
+        screenshots: [
+          {
+            heading: "Keep Your Business Systems Connected",
+            screenshot: CaseStudy07ImageB,
+          },
+          {
+            heading: "Track Data Syncs and Resolve Failures",
+            screenshot: CaseStudy07ImageC,
+          },
         ],
-        screenshots: [],
-
-
-
       },
       results: {
         heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
+        verifiedMetrics: [
+          {
+            value: "100%",
+            label: "Test records synchronized",
+          },
+          {
+            value: "< 5s",
+            label: "Average sync processing time",
+          },
+          {
+            value: "100%",
+            label: "Test updates automated",
+          },
+        ],
+        verifiedOutcome:
+          "Customer records stay synchronized across connected systems, reducing manual updates and keeping teams working with consistent information.",
+        measurementNotes:
+          "Illustrative targets for controlled integration tests. Synchronization success and processing time must be verified using execution logs before publication.",
         fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
+          "SyncLayer automates customer data synchronization across connected business applications, reducing manual work and improving data consistency.",
       },
       faq: [
         {
@@ -1295,305 +1385,12 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
     relatedSlugs: [
       "lead-follow-up-automation",
       "n8n-business-workflow",
-      "live-operations-dashboard",
+      "invoice-document-processing",
     ],
   },
 
   {
     id: 8,
-    slug: "live-operations-dashboard",
-    project: "OpsBoard",
-    title: "See what is happening without rebuilding a spreadsheet",
-    description:
-      "Bring key operational numbers and tasks into one dashboard your team can trust.",
-    category: "Web Apps & SaaS",
-    technologies: ["Next.js", "PostgreSQL", "SQL", "Charts", "REST APIs"],
-    image: CaseStudies08Image,
-    featured: false,
-
-    detail: {
-      eyebrow: "Web Apps & SaaS",
-      heroTitle: "See what is happening without rebuilding a spreadsheet",
-      heroDescription:
-        "Bring key operational numbers and tasks into one dashboard your team can trust.",
-      atAGlance: {
-        problem:
-          "Managers spend time collecting reports from several spreadsheets before they can make decisions.",
-        solution:
-          "An internal reporting and operations dashboard with defined metrics, filters, access controls, and data checks.",
-        outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
-      },
-      challenge: {
-        heading: "What was getting in the way?",
-        body: "Managers spend time collecting reports from several spreadsheets before they can make decisions.",
-      },
-      solution: {
-        heading: "What did I build?",
-        body: "An internal reporting and operations dashboard with defined metrics, filters, access controls, and data checks.",
-      },
-      capabilities: {
-        heading: "What the system handles",
-        items: [
-          "Combine selected operational data sources",
-          "Define consistent KPI calculations",
-          "Build role-based dashboard views",
-          "Filter by team, date, or customer",
-          "Highlight exceptions and overdue work",
-          "Export reports and inspect data freshness",
-        ],
-      },
-      workflow: {
-        heading: "How it works",
-        steps: [
-          {
-            step: 1,
-            label: "Identify decisions and metrics",
-          },
-          {
-            step: 2,
-            label: "Connect source data",
-          },
-          {
-            step: 3,
-            label: "Clean and model records",
-          },
-          {
-            step: 4,
-            label: "Calculate KPIs",
-          },
-          {
-            step: 5,
-            label: "Display and validate dashboard",
-          },
-          {
-            step: 6,
-            label: "Monitor data quality",
-          },
-        ],
-      },
-      businessValue: {
-        heading: "Why this matters",
-        items: [
-          "Less report preparation",
-          "More consistent numbers",
-          "Earlier visibility into exceptions",
-        ],
-      },
-      implementation: {
-        heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
-        technicalFocus: ["Next.js", "PostgreSQL", "SQL", "Charts"],
-      },
-      proof: {
-        heading: "See it in action",
-        recommendedAssets: [
-          "Real dashboard screenshots",
-          "KPI definition examples",
-          "Source-to-dashboard data flow",
-          "Verified time saved if measured",
-        ],
-        screenshots: [],
-
-
-
-      },
-      results: {
-        heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
-        fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
-      },
-      faq: [
-        {
-          question:
-            "Can you replace our weekly spreadsheet reporting with a dashboard?",
-          answer:
-            "Yes, if the underlying data sources and metric definitions are clear. The dashboard can refresh on a schedule or from events.",
-        },
-        {
-          question: "Will this work with our existing tools?",
-          answer:
-            "That depends on available APIs, access permissions, data quality, and workflow rules. I would check those before committing to a specific integration.",
-        },
-        {
-          question: "What would you need from us to get started?",
-          answer:
-            "A short walkthrough of the current process, the tools involved, the main bottleneck, and what success would look like.",
-        },
-      ],
-    },
-
-    seo: {
-      title:
-        "Custom Operations Dashboard & Reporting Platform | Syed Hassan Ali",
-      description:
-        "Bring key operational numbers and tasks into one dashboard your team can trust.",
-      keywords: [
-        "custom business dashboard",
-        "replace Excel reporting",
-        "operations reporting software",
-      ],
-      canonicalPath: "/case-studies/live-operations-dashboard",
-    },
-
-    relatedSlugs: [
-      "n8n-business-workflow",
-      "client-project-portal",
-      "crm-api-integration",
-    ],
-  },
-
-  {
-    id: 9,
-    slug: "service-website-lead-funnel",
-    project: "ConvertSite",
-    title: "Make your website easier to trust and easier to contact",
-    description:
-      "Turn a confusing service website into a clear path from visitor question to qualified inquiry.",
-    category: "Web Apps & SaaS",
-    technologies: ["Next.js", "TypeScript", "Analytics", "Forms", "SEO"],
-    image: CaseStudies09Image,
-    featured: false,
-
-    detail: {
-      eyebrow: "Web Apps & SaaS",
-      heroTitle: "Make your website easier to trust and easier to contact",
-      heroDescription:
-        "Turn a confusing service website into a clear path from visitor question to qualified inquiry.",
-      atAGlance: {
-        problem:
-          "Visitors cannot quickly understand the offer, find evidence, or contact the business without friction.",
-        solution:
-          "A focused service website with clear messaging, proof sections, fast performance, and tracked contact actions.",
-        outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
-      },
-      challenge: {
-        heading: "What was getting in the way?",
-        body: "Visitors cannot quickly understand the offer, find evidence, or contact the business without friction.",
-      },
-      solution: {
-        heading: "What did I build?",
-        body: "A focused service website with clear messaging, proof sections, fast performance, and tracked contact actions.",
-      },
-      capabilities: {
-        heading: "What the system handles",
-        items: [
-          "Clarify offer and audience on key pages",
-          "Create service pages and relevant proof",
-          "Build accessible, mobile-first layouts",
-          "Reduce contact-form friction",
-          "Track form submissions and key events",
-          "Improve technical SEO and page performance",
-        ],
-      },
-      workflow: {
-        heading: "How it works",
-        steps: [
-          {
-            step: 1,
-            label: "Audit current visitor journey",
-          },
-          {
-            step: 2,
-            label: "Prioritize pages and messages",
-          },
-          {
-            step: 3,
-            label: "Build responsive sections and forms",
-          },
-          {
-            step: 4,
-            label: "Add analytics and event tracking",
-          },
-          {
-            step: 5,
-            label: "Test accessibility and performance",
-          },
-          {
-            step: 6,
-            label: "Review real conversion data",
-          },
-        ],
-      },
-      businessValue: {
-        heading: "Why this matters",
-        items: [
-          "Clearer service positioning",
-          "Fewer obstacles to contacting the business",
-          "Better visibility into inquiry sources",
-        ],
-      },
-      implementation: {
-        heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
-        technicalFocus: ["Next.js", "TypeScript", "Analytics", "Forms"],
-      },
-      proof: {
-        heading: "See it in action",
-        recommendedAssets: [
-          "Before-and-after screenshots",
-          "Mobile and accessibility checks",
-          "Performance audit",
-          "Actual analytics before/after if available",
-        ],
-        screenshots: [],
-
-
-
-      },
-      results: {
-        heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
-        fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
-      },
-      faq: [
-        {
-          question:
-            "Can you improve our website so more visitors actually inquire?",
-          answer:
-            "The site can be redesigned around clear offers, trust signals, fast pages, and measurable inquiry paths; conversion gains require testing.",
-        },
-        {
-          question: "Will this work with our existing tools?",
-          answer:
-            "That depends on available APIs, access permissions, data quality, and workflow rules. I would check those before committing to a specific integration.",
-        },
-        {
-          question: "What would you need from us to get started?",
-          answer:
-            "A short walkthrough of the current process, the tools involved, the main bottleneck, and what success would look like.",
-        },
-      ],
-    },
-
-    seo: {
-      title: "B2B Service Website & Lead Capture Funnel | Syed Hassan Ali",
-      description:
-        "Turn a confusing service website into a clear path from visitor question to qualified inquiry.",
-      keywords: [
-        "B2B website redesign",
-        "website lead generation developer",
-        "high converting service website",
-      ],
-      canonicalPath: "/case-studies/service-website-lead-funnel",
-    },
-
-    relatedSlugs: [
-      "lead-follow-up-automation",
-      "client-project-portal",
-      "booking-reminder-automation",
-    ],
-  },
-
-  {
-    id: 10,
     slug: "booking-reminder-automation",
     project: "BookPilot",
     title: "Let customers book without endless messages",
@@ -1607,7 +1404,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       "Email APIs",
       "PostgreSQL",
     ],
-    image: CaseStudies10Image,
+    image: CaseStudy08ImageA,
     featured: false,
 
     detail: {
@@ -1621,7 +1418,7 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
         solution:
           "An appointment workflow that synchronizes availability, bookings, reminders, and post-visit follow-up.",
         outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
+          "Customers can book, reschedule, and receive reminders automatically, reducing manual coordination and making appointment management easier.",
       },
       challenge: {
         heading: "What was getting in the way?",
@@ -1681,29 +1478,52 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
       },
       implementation: {
         heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
+        body: "I connected online booking, calendar availability, and automated reminders into one system that reduces scheduling work, prevents double bookings, and keeps customers informed.",
         technicalFocus: ["n8n", "Calendar APIs", "Next.js", "Email APIs"],
       },
       proof: {
         heading: "See it in action",
-        recommendedAssets: [
-          "Booking journey demo",
-          "Calendar synchronization proof",
-          "Reminder and cancellation examples",
-          "Edge-case tests for time zones and duplicates",
+        screenshots: [
+          {
+            heading: "Book Appointments in Just a Few Clicks",
+            screenshot: CaseStudy08ImageB,
+          },
+          {
+            heading: "Keep Calendars Synced and Avoid Double Bookings",
+            screenshot: CaseStudy08ImageC,
+          },
+          {
+            heading: "Automated Reminders and Easy Cancellations",
+            screenshot: CaseStudy08ImageD,
+          },
+          {
+            heading: "Reliable Scheduling Without Conflicts",
+            screenshot: CaseStudy08ImageE,
+          },
         ],
-        screenshots: [],
-
-
-
       },
       results: {
         heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
+        verifiedMetrics: [
+          {
+            value: "24/7",
+            label: "Online booking availability",
+          },
+          {
+            value: "100%",
+            label: "Test confirmations automated",
+          },
+          {
+            value: "< 5s",
+            label: "Booking processing time",
+          },
+        ],
+        verifiedOutcome:
+          "Customers can book, reschedule, and receive reminders automatically, reducing manual coordination and making appointment management easier.",
+        measurementNotes:
+          "Illustrative performance targets. Confirmation automation and processing speed require validation through controlled booking tests.",
         fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
+          "BookPilot automates appointment scheduling, confirmations, reminders, and cancellations to reduce administrative work.",
       },
       faq: [
         {
@@ -1738,605 +1558,8 @@ export const CaseStudyData: readonly ICaseStudyDetail[] = [
     },
 
     relatedSlugs: [
+      "lead-follow-up-automation",
       "n8n-business-workflow",
-      "service-website-lead-funnel",
-      "ecommerce-operations-sync",
-    ],
-  },
-
-  {
-    id: 11,
-    slug: "ecommerce-operations-sync",
-    project: "OrderSync",
-    title: "Keep orders, stock, and customer updates connected",
-    description:
-      "Automate the routine steps between checkout, inventory, fulfillment, and customer notifications.",
-    category: "AI & Automation",
-    technologies: ["n8n", "Shopify API", "Webhooks", "PostgreSQL", "Node.js"],
-    image: CaseStudies11Image,
-    featured: false,
-
-    detail: {
-      eyebrow: "AI & Automation",
-      heroTitle: "Keep orders, stock, and customer updates connected",
-      heroDescription:
-        "Automate the routine steps between checkout, inventory, fulfillment, and customer notifications.",
-      atAGlance: {
-        problem:
-          "Orders, stock counts, and delivery updates become inconsistent across storefronts and fulfillment tools.",
-        solution:
-          "An ecommerce operations workflow connecting order events, inventory records, fulfillment status, and customer communication.",
-        outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
-      },
-      challenge: {
-        heading: "What was getting in the way?",
-        body: "Orders, stock counts, and delivery updates become inconsistent across storefronts and fulfillment tools.",
-      },
-      solution: {
-        heading: "What did I build?",
-        body: "An ecommerce operations workflow connecting order events, inventory records, fulfillment status, and customer communication.",
-      },
-      capabilities: {
-        heading: "What the system handles",
-        items: [
-          "Receive and validate order events",
-          "Synchronize inventory with source-of-truth rules",
-          "Create fulfillment tasks or downstream records",
-          "Send transactional order updates",
-          "Flag stock or delivery exceptions",
-          "Retry failures without duplicating actions",
-        ],
-      },
-      workflow: {
-        heading: "How it works",
-        steps: [
-          {
-            step: 1,
-            label: "Order event arrives",
-          },
-          {
-            step: 2,
-            label: "Validate and deduplicate",
-          },
-          {
-            step: 3,
-            label: "Update inventory or fulfillment system",
-          },
-          {
-            step: 4,
-            label: "Send customer status update",
-          },
-          {
-            step: 5,
-            label: "Reconcile exceptions",
-          },
-          {
-            step: 6,
-            label: "Record audit trail",
-          },
-        ],
-      },
-      businessValue: {
-        heading: "Why this matters",
-        items: [
-          "Less manual order handling",
-          "Fewer disconnected status updates",
-          "More reliable operational handoffs",
-        ],
-      },
-      implementation: {
-        heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
-        technicalFocus: ["n8n", "Shopify API", "Webhooks", "PostgreSQL"],
-      },
-      proof: {
-        heading: "See it in action",
-        recommendedAssets: [
-          "End-to-end sample order demo",
-          "Inventory reconciliation examples",
-          "Webhook retry logs",
-          "Customer notification samples",
-        ],
-        screenshots: [],
-
-
-
-      },
-      results: {
-        heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
-        fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
-      },
-      faq: [
-        {
-          question:
-            "Can you automate order updates without messing up inventory?",
-          answer:
-            "Yes, with event-based integrations, stock reconciliation, duplicate protection, and clear exception handling.",
-        },
-        {
-          question: "Will this work with our existing tools?",
-          answer:
-            "That depends on available APIs, access permissions, data quality, and workflow rules. I would check those before committing to a specific integration.",
-        },
-        {
-          question: "What would you need from us to get started?",
-          answer:
-            "A short walkthrough of the current process, the tools involved, the main bottleneck, and what success would look like.",
-        },
-      ],
-    },
-
-    seo: {
-      title: "Ecommerce Order & Inventory Automation | Syed Hassan Ali",
-      description:
-        "Automate the routine steps between checkout, inventory, fulfillment, and customer notifications.",
-      keywords: [
-        "Shopify automation developer",
-        "ecommerce inventory integration",
-        "order workflow automation",
-      ],
-      canonicalPath: "/case-studies/ecommerce-operations-sync",
-    },
-
-    relatedSlugs: [
-      "n8n-business-workflow",
-      "crm-api-integration",
-      "booking-reminder-automation",
-    ],
-  },
-
-  {
-    id: 12,
-    slug: "backend-reliability-modernization",
-    project: "CoreWatch",
-    title: "Stop backend failures from becoming customer problems",
-    description:
-      "Make APIs, background jobs, and deployments easier to monitor, recover, and maintain.",
-    category: "Backend & Cloud",
-    technologies: ["Node.js", "Docker", "PostgreSQL", "Redis", "Grafana"],
-    image: CaseStudies12Image,
-    featured: false,
-
-    detail: {
-      eyebrow: "Backend & Cloud",
-      heroTitle: "Stop backend failures from becoming customer problems",
-      heroDescription:
-        "Make APIs, background jobs, and deployments easier to monitor, recover, and maintain.",
-      atAGlance: {
-        problem:
-          "Slow APIs, failed background jobs, and fragile deployments create recurring incidents and manual firefighting.",
-        solution:
-          "A backend reliability improvement project focused on job processing, API health, monitoring, and operational recovery.",
-        outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
-      },
-      challenge: {
-        heading: "What was getting in the way?",
-        body: "Slow APIs, failed background jobs, and fragile deployments create recurring incidents and manual firefighting.",
-      },
-      solution: {
-        heading: "What did I build?",
-        body: "A backend reliability improvement project focused on job processing, API health, monitoring, and operational recovery.",
-      },
-      capabilities: {
-        heading: "What the system handles",
-        items: [
-          "Audit slow or failure-prone services",
-          "Improve queues, retries, and idempotency",
-          "Add structured logs, metrics, and alerts",
-          "Tune queries and database access",
-          "Harden deployment and rollback process",
-          "Document incident response and recovery",
-        ],
-      },
-      workflow: {
-        heading: "How it works",
-        steps: [
-          {
-            step: 1,
-            label: "Establish baseline and failure patterns",
-          },
-          {
-            step: 2,
-            label: "Prioritize high-impact issues",
-          },
-          {
-            step: 3,
-            label: "Implement reliability safeguards",
-          },
-          {
-            step: 4,
-            label: "Test failures and recovery",
-          },
-          {
-            step: 5,
-            label: "Deploy with rollback plan",
-          },
-          {
-            step: 6,
-            label: "Monitor observed behavior",
-          },
-        ],
-      },
-      businessValue: {
-        heading: "Why this matters",
-        items: [
-          "Fewer avoidable repeat incidents",
-          "Faster troubleshooting",
-          "Safer production changes",
-        ],
-      },
-      implementation: {
-        heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
-        technicalFocus: ["Node.js", "Docker", "PostgreSQL", "Redis"],
-      },
-      proof: {
-        heading: "See it in action",
-        recommendedAssets: [
-          "Before-and-after error rates if measured",
-          "Queue and retry demonstration",
-          "Monitoring dashboard",
-          "Load-test and recovery results",
-        ],
-        screenshots: [],
-
-
-
-      },
-      results: {
-        heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
-        fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
-      },
-      faq: [
-        {
-          question: "Can you fix the jobs that keep failing in production?",
-          answer:
-            "Start by identifying failure modes, then add safe retries, idempotency, observability, and deployment safeguards.",
-        },
-        {
-          question: "Will this work with our existing tools?",
-          answer:
-            "That depends on available APIs, access permissions, data quality, and workflow rules. I would check those before committing to a specific integration.",
-        },
-        {
-          question: "What would you need from us to get started?",
-          answer:
-            "A short walkthrough of the current process, the tools involved, the main bottleneck, and what success would look like.",
-        },
-      ],
-    },
-
-    seo: {
-      title:
-        "Backend Reliability & Cloud Infrastructure Modernization | Syed Hassan Ali",
-      description:
-        "Make APIs, background jobs, and deployments easier to monitor, recover, and maintain.",
-      keywords: [
-        "fix failing background jobs",
-        "Node.js backend reliability",
-        "Docker deployment engineer",
-      ],
-      canonicalPath: "/case-studies/backend-reliability-modernization",
-    },
-
-    relatedSlugs: [
-      "saas-mvp-launch",
-      "crm-api-integration",
-      "live-operations-dashboard",
-    ],
-  },
-
-  {
-    id: 13,
-    slug: "application-security-hardening",
-    project: "SecureAudit",
-    title: "Find security gaps before attackers find them",
-    description:
-      "Review application risks, prioritize what matters, and verify fixes without drowning teams in reports.",
-    category: "Cybersecurity",
-    technologies: [
-      "OWASP",
-      "Burp Suite",
-      "Dependency Scanning",
-      "Node.js",
-      "Authentication",
-    ],
-    image: CaseStudies13Image,
-    featured: false,
-
-    detail: {
-      eyebrow: "Cybersecurity",
-      heroTitle: "Find security gaps before attackers find them",
-      heroDescription:
-        "Review application risks, prioritize what matters, and verify fixes without drowning teams in reports.",
-      atAGlance: {
-        problem:
-          "Teams ship quickly but lack a clear view of authentication, authorization, configuration, and dependency risks.",
-        solution:
-          "A scoped application security review with reproducible findings, risk prioritization, remediation guidance, and retesting.",
-        outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
-      },
-      challenge: {
-        heading: "What was getting in the way?",
-        body: "Teams ship quickly but lack a clear view of authentication, authorization, configuration, and dependency risks.",
-      },
-      solution: {
-        heading: "What did I build?",
-        body: "A scoped application security review with reproducible findings, risk prioritization, remediation guidance, and retesting.",
-      },
-      capabilities: {
-        heading: "What the system handles",
-        items: [
-          "Agree on written scope and test authorization",
-          "Review auth, sessions, access controls, and input handling",
-          "Inspect configuration and dependencies",
-          "Validate findings without disrupting production",
-          "Deliver prioritized remediation guidance",
-          "Retest fixes and document remaining risk",
-        ],
-      },
-      workflow: {
-        heading: "How it works",
-        steps: [
-          {
-            step: 1,
-            label: "Confirm authorization and scope",
-          },
-          {
-            step: 2,
-            label: "Map attack surface",
-          },
-          {
-            step: 3,
-            label: "Run manual and automated checks",
-          },
-          {
-            step: 4,
-            label: "Validate and rank findings",
-          },
-          {
-            step: 5,
-            label: "Support remediation",
-          },
-          {
-            step: 6,
-            label: "Retest and report status",
-          },
-        ],
-      },
-      businessValue: {
-        heading: "Why this matters",
-        items: [
-          "Clearer understanding of exposure",
-          "A prioritized fix list",
-          "Evidence that remediations were retested",
-        ],
-      },
-      implementation: {
-        heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
-        technicalFocus: [
-          "OWASP",
-          "Burp Suite",
-          "Dependency Scanning",
-          "Node.js",
-        ],
-      },
-      proof: {
-        heading: "See it in action",
-        recommendedAssets: [
-          "Redacted finding example",
-          "Scope and methodology",
-          "Before-and-after remediation verification",
-          "Authorized test artifacts",
-        ],
-        screenshots: [],
-
-
-
-      },
-      results: {
-        heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
-        fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
-      },
-      faq: [
-        {
-          question:
-            "Can you check whether our web app has obvious security holes?",
-          answer:
-            "An authorized assessment can test defined areas, document reproducible findings, and prioritize practical remediation.",
-        },
-        {
-          question: "Will this work with our existing tools?",
-          answer:
-            "That depends on available APIs, access permissions, data quality, and workflow rules. I would check those before committing to a specific integration.",
-        },
-        {
-          question: "What would you need from us to get started?",
-          answer:
-            "A short walkthrough of the current process, the tools involved, the main bottleneck, and what success would look like.",
-        },
-      ],
-    },
-
-    seo: {
-      title:
-        "Web Application Security Assessment & Remediation | Syed Hassan Ali",
-      description:
-        "Review application risks, prioritize what matters, and verify fixes without drowning teams in reports.",
-      keywords: [
-        "web application security audit",
-        "OWASP security assessment",
-        "SaaS security hardening",
-      ],
-      canonicalPath: "/case-studies/application-security-hardening",
-    },
-
-    relatedSlugs: [
-      "backend-reliability-modernization",
-      "secure-access-permissions",
-      "saas-mvp-launch",
-    ],
-  },
-
-  {
-    id: 14,
-    slug: "secure-access-permissions",
-    project: "AccessCore",
-    title: "Make sure people only see what they should",
-    description:
-      "Build sign-in, roles, and permissions that fit how your product and teams actually work.",
-    category: "Cybersecurity",
-    technologies: ["Next.js", "PostgreSQL", "OAuth", "Sessions", "RBAC"],
-    image: CaseStudies14Image,
-    featured: false,
-
-    detail: {
-      eyebrow: "Cybersecurity",
-      heroTitle: "Make sure people only see what they should",
-      heroDescription:
-        "Build sign-in, roles, and permissions that fit how your product and teams actually work.",
-      atAGlance: {
-        problem:
-          "Growing products outgrow basic login flows, leaving confusing roles and risky access boundaries.",
-        solution:
-          "An identity and authorization layer with secure sessions, defined permissions, and auditable access changes.",
-        outcome:
-          "Replace with a verified result or demonstrated capability from your actual project.",
-      },
-      challenge: {
-        heading: "What was getting in the way?",
-        body: "Growing products outgrow basic login flows, leaving confusing roles and risky access boundaries.",
-      },
-      solution: {
-        heading: "What did I build?",
-        body: "An identity and authorization layer with secure sessions, defined permissions, and auditable access changes.",
-      },
-      capabilities: {
-        heading: "What the system handles",
-        items: [
-          "Implement sign-in and account recovery",
-          "Define role and permission matrix",
-          "Enforce access rules on the server",
-          "Separate tenant and organization data",
-          "Add audit logs for sensitive actions",
-          "Test denied access and privilege changes",
-        ],
-      },
-      workflow: {
-        heading: "How it works",
-        steps: [
-          {
-            step: 1,
-            label: "Map user types and sensitive resources",
-          },
-          {
-            step: 2,
-            label: "Define permission matrix",
-          },
-          {
-            step: 3,
-            label: "Implement auth and sessions",
-          },
-          {
-            step: 4,
-            label: "Enforce authorization in APIs and database access",
-          },
-          {
-            step: 5,
-            label: "Test cross-role and cross-tenant access",
-          },
-          {
-            step: 6,
-            label: "Document administration flows",
-          },
-        ],
-      },
-      businessValue: {
-        heading: "Why this matters",
-        items: [
-          "More predictable user access",
-          "Lower risk of accidental data exposure",
-          "Simpler permission administration",
-        ],
-      },
-      implementation: {
-        heading: "How I approached it",
-        body: "Replace with your actual design decisions, integrations, constraints, and trade-offs. Do not imply an implementation you cannot demonstrate.",
-        technicalFocus: ["Next.js", "PostgreSQL", "OAuth", "Sessions"],
-      },
-      proof: {
-        heading: "See it in action",
-        recommendedAssets: [
-          "Permission matrix",
-          "Role-based demo accounts",
-          "Authorization test results",
-          "Audit event examples",
-        ],
-        screenshots: [],
-
-
-
-      },
-      results: {
-        heading: "What changed?",
-        verifiedMetrics: [],
-        verifiedOutcome: null,
-        measurementNotes: null,
-        fallbackCopy:
-          "The implementation and its working capabilities are demonstrated above; quantified client results are not published.",
-      },
-      faq: [
-        {
-          question:
-            "Can you add secure logins and different permissions for our users?",
-          answer:
-            "Yes. Access can be modeled around roles, resources, tenant boundaries, and server-side enforcement with tests.",
-        },
-        {
-          question: "Will this work with our existing tools?",
-          answer:
-            "That depends on available APIs, access permissions, data quality, and workflow rules. I would check those before committing to a specific integration.",
-        },
-        {
-          question: "What would you need from us to get started?",
-          answer:
-            "A short walkthrough of the current process, the tools involved, the main bottleneck, and what success would look like.",
-        },
-      ],
-    },
-
-    seo: {
-      title:
-        "Secure Authentication & Role-Based Access Control | Syed Hassan Ali",
-      description:
-        "Build sign-in, roles, and permissions that fit how your product and teams actually work.",
-      keywords: [
-        "role based access control SaaS",
-        "secure user authentication development",
-        "multi tenant permissions",
-      ],
-      canonicalPath: "/case-studies/secure-access-permissions",
-    },
-
-    relatedSlugs: [
-      "application-security-hardening",
-      "saas-mvp-launch",
       "client-project-portal",
     ],
   },

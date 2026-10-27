@@ -1,12 +1,4 @@
-import { Geist_Mono, Manrope, Space_Grotesk } from "next/font/google";
-
-export const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
-  preload: true,
-  fallback: ["monospace"],
-});
+import { Manrope, Space_Grotesk } from "next/font/google";
 
 export const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",

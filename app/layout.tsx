@@ -1,3 +1,5 @@
+import StructuredData from "@/components/shared/structured-data";
+import { site } from "@/configs/site";
 import { manrope, spaceGrotesk } from "@/configs/fonts";
 export { metadata } from "@/configs/metadata";
 export { viewport } from "@/configs/viewport";
@@ -25,6 +27,13 @@ export default function RootLayout({
         suppressHydrationWarning
         className="min-h-full w-full flex flex-col"
       >
+        {site.configured && <StructuredData data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            { "@type": "WebSite", "@id": `${site.url}/#website`, url: site.url, name: site.name, inLanguage: "en" },
+            { "@type": "Person", "@id": `${site.url}/#person`, name: site.name, url: site.url, jobTitle: "Full-Stack Software Engineer", ...(process.env.NEXT_PUBLIC_LINKEDIN_URL ? { sameAs: [process.env.NEXT_PUBLIC_LINKEDIN_URL] } : {}) },
+          ],
+        }} />}
         <GlobalProvider>{children}</GlobalProvider>
       </body>
     </html>
